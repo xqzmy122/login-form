@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 ;
+}
+
+body {
+    background: linear-gradient(0deg, #49225B 0%, #ffffff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 800px;
+    height: 400px;
+    background-color: #6E3482;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.sign-in-btn {
+    background-color: #f5ebfa;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 500px;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
