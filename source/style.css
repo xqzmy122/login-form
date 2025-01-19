@@ -12,6 +12,10 @@ body {
     height: 100vh;
 }
 
+h3 {
+    color: #f5ebfa;
+}
+
 .login-form {
     width: 800px;
     height: 400px;
@@ -28,20 +32,138 @@ body {
     width: 50%;
 }
 
-.sign-in-btn {
+.sign-in-up-form {
     background-color: #f5ebfa;
-    display: flex;
-    flex-direction: column;
     position: absolute;
     left: 0;
     width: 50%;
     height: 500px;
+    overflow: hidden;
+    transition: 1s;
 }
 
 .sign-in-form {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    gap: 10px;
+    height: 100%;
+    padding-left: 10%;
+    width: 100%;
+    transition-delay: 0.25s;
+    transition: 0.5s;
 }
 
+.sign-in-field {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
 
+.sign-in-form__title {
+    font-weight: 400;
+}
 
+.sign-in-field__login {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sign-in-field__password {
+    padding: 5px;
+}
+
+.sign-in-form__btn {
+    background-color: #6E3482;
+    color: #f5ebfa;
+    padding: 5px;
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: center;
+    top: 0;
+    left: 100%;
+    gap: 10px;
+    height: 100%;
+    padding-left: 10%;
+    width: 100%;
+    transition-delay: 0s;
+    transition: 0.5s;
+}
+
+.sign-up-form__title {
+    font-weight: 400;
+}
+
+.sign-up-field {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-field__login {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sign-up-field__email {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sign-up-field__password {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sign-up-field__password_applying {
+    padding: 5px;
+}
+
+.sign-up-form__btn {
+    background-color: #6E3482;
+    color: #f5ebfa;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.title__signin-btn {
+    width: 30%;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+.title__signup-btn {
+    width: 40%;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+.sign-in-up-form.active {
+    left: 50%;
+}
+
+.sign-in-up-form.active .sign-in-form{
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.sign-in-up-form.active .sign-up-form {
+    left: 0;
+    transition-delay: 0.25s;
+}

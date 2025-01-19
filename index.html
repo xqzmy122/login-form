@@ -4,25 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/source/style.css">
+
     <title>Login Form</title>
 </head>
 <body>
     <section class="login-form">
-        <article class="login-form sign-in-btn">
-            <h2>Вход</h2>
-            <form class="sign-in-form">
-                <input class="sign-in-form__login" type="text" placeholder="Логин">
-                <input class="sign-in-form__password" type="text" placeholder="Пароль">
+        <article class="sign-in-up-form">
+            <article class="sign-in-form">
+
+                <h2 class="sign-in-form__title">Вход</h2>
+                <form class="sign-in-field">
+                    <input class="sign-in-field__login" type="text" placeholder="Логин">
+                    <input class="sign-in-field__password" type="text" placeholder="Пароль">
+                </form>
+                <buttton class="sign-in-form__btn">Войти</buttton>
+                <a class="sign-in-form__ref" href="#">Восстановить пароль</a>
+            </article>
+
+            <article class="sign-up-form">
+                <h2 class="sign-up-form__title">Регистрация</h2>
+            <form class="sign-up-field">
+                <input class="sign-up-field__login" type="text" placeholder="Логин">
+                <input class="sign-up-field__email" type="text" placeholder="Email">
+                <input class="sign-up-field__password" type="text" placeholder="Пароль">
+                <input class="sign-up-field__password_applying" type="text" placeholder="Подтвердите пароль">
             </form>
+            <buttton class="sign-up-form__btn">Зарегестрироваться</buttton>
+            </article>
         </article>
+
         <div class="title">
             <h3>У вас уже есть аккаунт?</h3>
-            <button class="title__signing-btn">Войти</button>
+            <button class="title__signin-btn">Войти</button>
         </div>
         <div class="title">
             <h3>У вас нет аккаунта?</h3>
-            <button>Зарегестрироваться</button>
+            <button class="title__signup-btn">Зарегестрироваться</button>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
