@@ -23,6 +23,7 @@ h3 {
     display: flex;
     align-items: center;
     position: relative;
+    transition: 1s;
 }
 
 .title {
@@ -166,4 +167,40 @@ h3 {
 .sign-in-up-form.active .sign-up-form {
     left: 0;
     transition-delay: 0.25s;
+}
+
+@media (max-width:1000px) {
+    .login-form {
+        width: 400px;
+        height: 800px;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        
+    }
+
+    .sign-in-up-form {
+        width: 100%;
+        overflow: hidden;
+        height: 600px;
+        top: 0;
+    }
+
+    .title {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .title_sign-in {
+        padding-top: 90px;
+    }
+
+    .title_sign-up {
+        padding-bottom: 90px;
+    }
+
+    .sign-in-up-form.active {
+        top: 25%;
+        left: 0;
+    }
 }
